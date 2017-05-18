@@ -1,0 +1,8 @@
+/* THIS CODE DOESN'T VALIDATE SO HAS BEEN MOVED TO A SEPERATE STYLESHEET */
+@media screen and ( min-width: 1030px ){
+@-moz-document url-prefix() {
+  #bioBtn{
+    margin-top:15%
+  }
+ }
+}

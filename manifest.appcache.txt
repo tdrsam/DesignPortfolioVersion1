@@ -1,0 +1,8 @@
+CACHE MANIFEST
+# 2017-03-01 v1.0.0
+# these files will be cached
+ css?family=Dancing+Script.css
+
+ NETWORK:
+ # all other files won't be cached
+ *

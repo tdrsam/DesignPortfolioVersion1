@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Samuel Martin</title>
+
+  <meta name="description" content="Samuel Martin&#39;s Design Portfolio">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css.css" media="print">
+  <link rel="stylesheet" href="moz-css.css" media="print">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- GOOGLE FONT - DANCING SCRIPT -->
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Dancing+Script" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script" media="print" >
+
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- BG, HEADER, NAV -->
+	<div id="base">
+    <img src="images/bg.png" id="bg" alt="background image">
+		<header>
+      <picture>
+        <source srcset="images/webp/sam_design_logo_1.webp" type="image/webp" class="logo">
+        <source srcset="images/sam_design_logo_1.png" type="image/png" class="logo">
+        <img src="images/sam_design_logo_1.png" height="176" width="615" class="logo" alt="logo">
+      </picture>
+    </header>
+
+     <nav>
+
+    <!-- Contact Section -->
+    <a href="#contact" id="contactBtn">Contact</a>
+      <div id="contact">
+        <h1>Contact</h1>
+        <p>You can send a message to me here:</p>
+
+      <!-- CONTACT FORM -->
+
+      <!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
+      <form method="post" action="http://samsfakemusicstore.x10host.com/smdp/formmail.php" name="SampleForm">
+          <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+      <!-- STEP 2: Put your email address in the 'recipients' value.
+                         Note that you also have to allow this email address in the
+                         $TARGET_EMAIL setting within formmail.php!
+      -->
+      <input type="hidden" name="recipients" value="tdrsam@hotmail.com" />
+
+      <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+        NOTE: DO NOT put your email address and name here.
+        "Your email address" and "Your name" are error messages for your users to see,
+        not placeholders for you to replace.
+      -->
+    <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+
+    <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <input type="hidden" name="subject" value="Message From Design Portfolio Website" />
+
+    <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+    <input type="hidden" name="good_url" value="http://samsfakemusicstore.x10host.com/smdp/thanks.html" />
+    <input type="hidden" name="bad_url" value="http://samsfakemusicstore.x10host.com/smdp/tryagain.html" />
+
+    <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+    <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+
+    <label for="moniker">Name</label>
+    <input type="text" id="moniker" name="FullName" />
+
+    <label for="em">Email</label>
+    <input type="email" id="em" name="em" />
+
+    <label for="msg">Message <sub>&#40;sending extra contact details would be great&#41;</sub></label>
+    <textarea id="msg" name="mesg" rows="10" cols="50"></textarea>
+
+    <input type="submit" value="Send" id="submit" />
+
+    </form>
+<!-- END CONTACT FORM -->
+
+      <hr>
+      <p>Here's my email address if you'd like it: <span class='contactMethods'>tdrsam@hotmail.com</span></p>
+      <hr>
+      <p>Or just call if you want:<br /><sub>&#40;Just tap from your phone&#41;</sub><br /><span class='contactMethods'><a href="tel:0433782083" id="phone">(+61) 0433 782 082</a></span></p>
+      <a class="nav-close" href="#"></a>
+    </div>
+
+    <!-- Bio Section -->
+      <a href="#bio" id="bioBtn">Bio</a>
+      <div id="bio">
+      <h1>Bio</h1>
+        <p>My graphic design story isn't very interesting, unfortunately.</p>
+        <p>I was working in science and realised I wasn't enjoying it anymore. I knew I wanted to do something creative, so I enrolled to study Web Dev. Part of the course was graphic design and eventually I realized I'm quite fond of it.<p>
+          <p>I now keep an eye on the design blogs and get great joy from all types of design; graphic, room design, typographic, architectural, environmental, etc.</p>
+          <p>I'm originally from Sydney, Australia and still live and work here.</p>
+          <p>~</p>
+          <a class="nav-close" href="#"></a>
+        </div>
+      </nav> <!-- CLOSE BG, HEADER, NAV -->
+      <section id="content">
+        <div class='postContact'>
+          <p>Unfortunately, something went wrong, please try sending your message again.</p>
+        </div>
+      </section>
+      </div>
+      <link rel="stylesheet" href="css.css" media="all">
+      <link rel="stylesheet" href="moz-css.css" media="all">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script" media="all">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One" media="all" >
+    </body>
+  </html>
